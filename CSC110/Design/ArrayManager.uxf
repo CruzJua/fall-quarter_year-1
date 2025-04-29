@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>918</x>
+      <y>171</y>
+      <w>342</w>
+      <h>774</h>
+    </coordinates>
+    <panel_attributes>/*&lt;&lt;enumeration&gt;&gt;*/
+Rating
+-
+Zero
+One
+Two
+Three
+Four
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+Invalid_Rating</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>171</y>
+      <w>342</w>
+      <h>774</h>
+    </coordinates>
+    <panel_attributes>MainActivity
+/*&lt;&lt;ClassName&gt;&gt;*/
+-
+/*&lt;&lt;Attributes&gt;&gt;*/
+- etxtTitle : EditText
+- etxtRating : EditText
+- etxtArtist : EditText
+- etxtSearch : EditText
+- tvDisplayCurrent : TextView
+- tvDisplaySongInfo : TextView
+- songs : Song[]
+- currentSong : int
+- totalSongCount : int
+-
+/*&lt;&lt;Behaviors&gt;&gt;*/
++ init() : void
++ onAdd(v : View) : void
++ onSearch(v : View) : void
++ onDelete(v : View) : void
++ onClear(v : View) : void
++ onNext(v : View) : void
++ onPrevious(v : View) : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>171</y>
+      <w>342</w>
+      <h>774</h>
+    </coordinates>
+    <panel_attributes>Song
+/*&lt;&lt;ClassName&gt;&gt;*/
+-
+/*&lt;&lt;Attributes&gt;&gt;*/
+- title : String
+- rating : Enum
+- artist : String
+-
+/*&lt;&lt;Behaviors&gt;&gt;*/
++ getTitle() : String
++ setTitle(title : String) : void
++ getArtist() : String
++ setArtist(artist : String) : void
++ setRating(Rating rating) : void
++ Song() &lt;&lt;ctor&gt;&gt;
++ Song(title : String, rating : String, artist : String) &lt;&lt;ctor&gt;&gt;
++ toString() : String &lt;&lt;override&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

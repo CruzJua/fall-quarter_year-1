@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>63</x>
+      <y>0</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Class Diagram
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>72</y>
+      <w>648</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>ClassName
+-
+//Atributes
++ publicVar : DataType
+- PrivateVar : DataType
+
+-
+//Behaviors/Methods
++ PublicMethod() : ReturnDataType
+- PrivateMethod(param1 : DataType, param2 :DataType) : void
++ toString() : String &lt;&lt;override&gt;&gt;
++ ClassName() &lt;&lt;ctor&gt;&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>216</y>
+      <w>270</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Create a class diagram for the Movie class
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>36</x>
+      <y>288</y>
+      <w>621</w>
+      <h>387</h>
+    </coordinates>
+    <panel_attributes>Movie
+-
+- title : String
+- runTimeInMinutes : int
+- ratingScore : float
+-
++ Movie() &lt;&lt;ctor&gt;&gt;
++ Movie(title : String, runTimeInMinutes : int, ratingScore : float) &lt;&lt;ctor&gt;&gt;
+-
++ getTitle() : String
++ setTitles(title : String) : void
++ getRunTimeInMinutes() : int
++ setRunTimeInMinutes(runTimeInMinutes : int) : void
++ getRatingScore() : float
++ setRatingScore(ratingScore : float) : void
+-
++ toString() : String &lt;&lt;override&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

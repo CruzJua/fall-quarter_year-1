@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>130</y>
+      <w>540</w>
+      <h>840</h>
+    </coordinates>
+    <panel_attributes>Die
+/*&lt;&lt;ClassName&gt;&gt;*/
+-
+/*&lt;&lt;Attributes&gt;&gt;*/
+- dieFace : int
+-
+/*&lt;&lt;Behaviors&gt;&gt;*/
++ public roll() : void
++ public getDieFace() : int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>130</y>
+      <w>520</w>
+      <h>840</h>
+    </coordinates>
+    <panel_attributes>Player
+/*&lt;&lt;ClassName&gt;&gt;*/
+-
+/*&lt;&lt;Attributes&gt;&gt;*/
+- name : String = ""
+- score : int = 0
+-
+/*&lt;&lt;Behaviors&gt;&gt;*/
++ getName() : String
++ setName(name : String) : void
++ getScore() : int
++ setScore(score : int) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

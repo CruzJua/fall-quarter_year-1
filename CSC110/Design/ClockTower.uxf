@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>190</y>
+      <w>860</w>
+      <h>690</h>
+    </coordinates>
+    <panel_attributes>ClockTower
+/*&lt;&lt;ClassName&gt;&gt;*/
+-
+/*&lt;&lt;Attributes&gt;&gt;*/
+- hightInfemers : float
+- timeInMinutes : float = 0.0f
+- location : String
+- age : int
+- material : String = "peasant bones"
+- sound : String
+-
+/*&lt;&lt;Behaviors&gt;&gt;*/
++ ClockTower(hightInFemers : float, location : string, age : int, sound : String) &lt;&lt;ctor&gt;&gt;
++ ClockTower(hightInFemers : float, time : float, location : string, age : int, material : String, sound : String) &lt;&lt;ctor&gt;&gt;
+
+
++ getTimeInMinutes() : float
++ setTimeInMinutes(TimeInMinutes : float) : void
++ getAge() : int
++ setAge(age : int) : void
++ getSound() : String
++ setSound(sound : String) : void
++ getHightInFemers() : float
++ getLocation() : String
++ getMaterial() : String
++ makeSound(volumeInDbs : short, startTime : float, durationInMilliseconds : long) : String
++ toString() : String &lt;&lt;Override&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
